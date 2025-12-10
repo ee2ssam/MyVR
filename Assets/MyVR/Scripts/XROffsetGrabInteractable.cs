@@ -25,14 +25,6 @@ namespace MyVR
             }            
         }
 
-        /*protected override void OnSelectEntered(SelectEnterEventArgs args)
-        {
-            attachTransform.position = args.interactorObject.transform.position;
-            attachTransform.rotation = args.interactorObject.transform.rotation;
-
-            base.OnSelectEntered(args);
-        }*/
-
         protected override void OnSelectEntering(SelectEnterEventArgs args)
         {
             attachTransform.position = args.interactorObject.transform.position;
