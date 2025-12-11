@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6679324930717937616}
   - component: {fileID: 811948329436623147}
   - component: {fileID: 8772864889346731562}
+  - component: {fileID: 5833737236134883927}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -135,4 +136,19 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!114 &5833737236134883927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062269517084874246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e78a6ce85abeb44838ff5688584bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 5
+  hitImpactPrefabs: {fileID: 3061015098213265699, guid: 8dab52b39bb64d44da252b3dbf79fe59, type: 3}
+  bulletSpeed: 20
