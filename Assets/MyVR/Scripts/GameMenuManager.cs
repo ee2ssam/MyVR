@@ -17,7 +17,9 @@ namespace MyVR
         public Transform head;
 
         [SerializeField]
-        private float distance = 1.5f;
+        private float distance = 1.5f;  //플레이어로 부터의 거리
+        [SerializeField]
+        private float heigth = 0f;      //플레이어 눈 부터의 높이
         #endregion
 
         #region Unity Event Method
@@ -40,7 +42,7 @@ namespace MyVR
             if(gameMenu.activeSelf)
             {
                 gameMenu.transform.position = head.position 
-                    + new Vector3(head.forward.x, 0f, head.forward.z).normalized * distance;
+                    + new Vector3(head.forward.x, heigth, head.forward.z).normalized * distance;
                 gameMenu.transform.LookAt(new Vector3(head.position.x, gameMenu.transform.position.y,
                     head.position.z));
                 gameMenu.transform.forward *= -1;   //반대방향으로 뒤집기
